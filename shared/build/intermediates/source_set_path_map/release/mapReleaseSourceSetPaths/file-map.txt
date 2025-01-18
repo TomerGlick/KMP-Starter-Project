@@ -1,0 +1,9 @@
+com.poalim.myapplication.shared-pngs-0 /Users/tomer/Develop/MyApplication/shared/build/generated/res/pngs/release
+com.poalim.myapplication.shared-resValues-1 /Users/tomer/Develop/MyApplication/shared/build/generated/res/resValues/release
+com.poalim.myapplication.shared-mergeReleaseResources-2 /Users/tomer/Develop/MyApplication/shared/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.poalim.myapplication.shared-mergeReleaseResources-3 /Users/tomer/Develop/MyApplication/shared/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.poalim.myapplication.shared-release-4 /Users/tomer/Develop/MyApplication/shared/build/intermediates/merged_res/release/mergeReleaseResources
+com.poalim.myapplication.shared-androidMain-5 /Users/tomer/Develop/MyApplication/shared/src/androidMain/res
+com.poalim.myapplication.shared-androidRelease-6 /Users/tomer/Develop/MyApplication/shared/src/androidRelease/res
+com.poalim.myapplication.shared-main-7 /Users/tomer/Develop/MyApplication/shared/src/main/res
+com.poalim.myapplication.shared-release-8 /Users/tomer/Develop/MyApplication/shared/src/release/res

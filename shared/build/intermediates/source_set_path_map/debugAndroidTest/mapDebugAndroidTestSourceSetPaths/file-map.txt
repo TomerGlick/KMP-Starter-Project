@@ -1,0 +1,5 @@
+com.poalim.myapplication.test.shared-androidTest-0 /Users/tomer/Develop/MyApplication/shared/build/generated/res/resValues/androidTest/debug
+com.poalim.myapplication.test.shared-mergeDebugAndroidTestResources-1 /Users/tomer/Develop/MyApplication/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.poalim.myapplication.test.shared-mergeDebugAndroidTestResources-2 /Users/tomer/Develop/MyApplication/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.poalim.myapplication.test.shared-debugAndroidTest-3 /Users/tomer/Develop/MyApplication/shared/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.poalim.myapplication.test.shared-debug-4 /Users/tomer/Develop/MyApplication/shared/build/intermediates/packaged_res/debug/packageDebugResources

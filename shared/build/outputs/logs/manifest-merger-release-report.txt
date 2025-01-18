@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml:2:13-83
+INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml:2:13-83
+	package
+		INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml
+	xmlns:android
+		ADDED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml:2:23-81
+uses-sdk
+INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml reason: use-sdk injection requested
+INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml
+INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml
+	android:targetSdkVersion
+		INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml
+	android:minSdkVersion
+		INJECTED from /Users/tomer/Develop/MyApplication/shared/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest7820051858374763029.xml
