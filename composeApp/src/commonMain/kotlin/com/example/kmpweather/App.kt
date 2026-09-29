@@ -19,7 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-// STEP 0: this UI is written once in commonMain and runs on Android, Desktop and iOS.
+// STEP 1: common code calls platformName() without knowing which platform it's on.
 @Composable
 fun App() {
     MaterialTheme {
@@ -32,7 +32,7 @@ fun App() {
         ) {
             Text("Hello, KMP!", style = MaterialTheme.typography.headlineMedium)
             Spacer(Modifier.height(8.dp))
-            Text("This screen lives in commonMain.")
+            Text("Running on ${platformName()}")
             Spacer(Modifier.height(16.dp))
             Button(onClick = { clicks++ }) {
                 Text("Clicked $clicks times")
