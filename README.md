@@ -3,13 +3,15 @@
 A small weather app built with Kotlin Multiplatform and Compose Multiplatform. The UI, networking and
 state management are all written once in `commonMain` and run on Android, Desktop and iOS.
 
-## Presentation & Workshop Slides
+## Presentation & Workshop Resources
 
-The presentation slides for this tutorial are included in the repository:
+The workshop presentation slides and setup guide are included in the repository:
 📄 [`Kotlin Multiplatform What It Is and How It Works.pdf`](Kotlin%20Multiplatform%20What%20It%20Is%20and%20How%20It%20Works.pdf)
+📋 [`KMP Workshop Setup Before the Session.pdf`](KMP%20Workshop%20Setup%20Before%20the%20Session.pdf)
 
 ## Before the session (please do this the day before)
 
+Please review the setup guide 📋 [`KMP Workshop Setup Before the Session.pdf`](KMP%20Workshop%20Setup%20Before%20the%20Session.pdf).
 The first Gradle sync downloads a lot, so do it ahead of time:
 
 1. Install **JDK 17 or newer** and the latest **Android Studio** (or IntelliJ IDEA).
