@@ -11,32 +11,45 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.kmpweather.ui.WeatherViewModel
 
-// STEP 1: common code calls platformName() without knowing which platform it's on.
+// STEP 2: the UI observes the shared ViewModel's StateFlows.
 @Composable
 fun App() {
     MaterialTheme {
-        var clicks by remember { mutableStateOf(0) }
+        // On non-Android platforms there's no reflection, so we tell viewModel() how to create it.
+        val viewModel = viewModel { WeatherViewModel() }
+        val weather by viewModel.weather.collectAsState()
+        val error by viewModel.error.collectAsState()
 
         Column(
             modifier = Modifier.fillMaxSize().safeContentPadding().padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
-            Text("Hello, KMP!", style = MaterialTheme.typography.headlineMedium)
+            Text("Lisbon", style = MaterialTheme.typography.headlineMedium)
             Spacer(Modifier.height(8.dp))
-            Text("Running on ${platformName()}")
-            Spacer(Modifier.height(16.dp))
-            Button(onClick = { clicks++ }) {
-                Text("Clicked $clicks times")
+
+            val current = weather
+            when {
+                error != null -> Text("Error: $error", color = MaterialTheme.colorScheme.error)
+                current != null -> Text(
+                    "${current.temperature} °C, wind ${current.windSpeed} km/h",
+                    style = MaterialTheme.typography.titleLarge,
+                )
+                else -> Text("Tap the button to load the weather")
             }
+
+            Spacer(Modifier.height(16.dp))
+            Button(onClick = viewModel::loadLisbon) { Text("Load weather") }
+            Spacer(Modifier.height(24.dp))
+            Text("Running on ${platformName()}", style = MaterialTheme.typography.bodySmall)
         }
     }
 }
